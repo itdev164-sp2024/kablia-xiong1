@@ -37,11 +37,11 @@ export const query = graphql`
         site {
             siteMetadata {
                 contact {
-                name
-                company
-                address
+                    name
+                    company
+                    address
+                }
             }
         }
     }
-}
 `
