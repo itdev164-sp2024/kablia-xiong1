@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 
 const Contact = ({ data }) => {
-    const { name, company, address } = data.site.siteMetaData.contact
+    const { name, company, address } = data.site.siteMetadata.contact
     return (
         <Layout>
             <Seo title="Contact Us" />
@@ -16,14 +16,14 @@ const Contact = ({ data }) => {
             <div>{`C/O ${name}`}</div>
             <div>{address}</div>
             <div style={{ maxWidth: `300 px`, marginBottom: `1.45rem` }}>
-            <StaticImage
-                src="../images/gatsby-icon.png"
-                width={300}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                alt="A Gatsby Blog"
-                style={{ marginBottom: `1.45rem` }}
-            />
+                <StaticImage
+                    src="../images/gatsby-icon.png"
+                    width={300}
+                    quality={95}
+                    formats={["auto", "webp", "avif"]}
+                    alt="A Gatsby Blog"
+                    style={{ marginBottom: `1.45rem` }}
+                />
             </div>
             <Link to="/">Home</Link>
         </Layout>
